@@ -7,10 +7,10 @@ APP=/root/mqtt_client/mqtt_scattato.lua
 
 SERVICE_DAEMONIZE=1
 SERVICE_WRITE_PID=1
-SERVICE_NAME=Domo
-SERVICE_USE_PID=1
+SERVICE_MATCH_EXEC=
 
 start() {
+        service_check $APP && return 1
         cd /root/mqtt_client/
         service_start $APP
 }
