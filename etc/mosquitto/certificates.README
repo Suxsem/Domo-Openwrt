@@ -1,0 +1,3 @@
+# http://mosquitto.org/man/mosquitto-tls-7.html
+# Don't ask cert password at startup:
+# openssl rsa -in server.key -out server_unencr.key

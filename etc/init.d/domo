@@ -1,0 +1,20 @@
+#!/bin/sh /etc/rc.common
+# Basic init script for Domo system
+# February 2015, Suxsem
+
+START=81
+APP=/root/mqtt_client/mqtt_scattato.lua
+
+SERVICE_DAEMONIZE=1
+SERVICE_WRITE_PID=1
+SERVICE_NAME=Domo
+SERVICE_USE_PID=1
+
+start() {
+        cd /root/mqtt_client/
+        service_start $APP
+}
+
+stop() {
+        service_stop $APP
+}
