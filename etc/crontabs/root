@@ -1,2 +1,2 @@
-* * * * * cd /root/mqtt_client/ ; ./mqtt_send.lua "sonny_lua_time" "time" $(date +%s) 1 0> /dev/null
-* * * * * cd /root/mqtt_client/ ; ./mqtt_send.lua "sonny_lua_time" "time/local" $(./mqtt_time.sh) 1 0> /dev/null
+* * * * * cd /root/mqtt_client/ ; ./mqtt_send.lua "sonny_lua_time" "time" $(date +%s) 1> /dev/null
+* * * * * cd /root/mqtt_client/ ; ./mqtt_send.lua "sonny_lua_time" "time/local" $(./mqtt_time.sh) 1> /dev/null
