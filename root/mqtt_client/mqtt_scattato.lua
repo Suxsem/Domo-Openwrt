@@ -17,7 +17,7 @@ local timer = function (time)
         diff = os.difftime(os.time(),init)
         end
         if disattivato == false then
-                mqtt:publish("Suxsem/Allarme", "Allarme!", 2, 0)
+                mqtt:publish("Suxsem/Allarme", "Allarme!", 2)
         end
 end
 
